@@ -1,182 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive Portofolio Website</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap">
-  <link rel="stylesheet" href="style.css">
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-</head>
-<body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio - Muhammad Ali Ramadhani</title>
     
-  <header class="header">
-    <a href="#home" class="logo">MY
-    <span>PORTOFOLIO</span></a>
-  
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
 
-    <div id="menu-icon" class="bx bx-menu"></div>
-
-    <nav class="navbar">
-      <a href="#home" class="active">Home</a>
-      <a href="#achievements">Achievements</a>
-      <a href="#project">Project</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-  <section class="home" id="home">
-    <div class="home-content">
-      <h1>Hi, I'am <span> Muhammad Taufan Akbar</span></h1>
-      <h3 class="text-animation">I'm a <span></span></h3>
-      <p class="description">
-        I am a passionate and dedicated student. Having more interest in information technology and able to think critically and have good public speaking skills. Have attended several seminars on programming to broaden my personal insight and skills. I want to actively contribute to the world of work and take advantage of available opportunities.
-      </p>
-      
-      <div class="social-icons">
-        <a href="https://wa.me/6289653600997"><i class='bx bxl-whatsapp' ></i></a>
-        <a href="https://www.linkedin.com/in/taufanhs/"><i class='bx bxl-linkedin'></i></a>
-        <a href="https://github.com/taufan759"><i class='bx bxl-github' ></i></a>
-        <a href="https://www.instagram.com/taufanakbr_/"><i class='bx bxl-instagram' ></i></a>
-      </div>
-
-      <div class="btn-group">
-        <a href="#contact"
-        class="btn">Contact <span>Saya</span></a>
-      </div>
-    </div>
-      <div class="home-img">
-        <img src="image.jpg" alt="">
-      </div> 
-  </section>
-
-  <section class = "achievements" id="achievements">
-    <h2 class="heading">Achievements</h2> 
-
-    <div class="timeline-items">
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>  
-          <div class="timeline-date">2021</div>
-          <div class="timeline-content">
-            <h3>High School</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab neque consequuntur aperiam laborum voluptatum eos incidunt aliquam sint laboriosam! Voluptas, exercitationem dignissimos placeat accusamus iusto laudantium voluptate veritatis quisquam neque!</p>
-          </div>
-        
-      </div>
-
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>  
-            <div class="timeline-date">2022</div>
-            <div class="timeline-content">
-              <h3>University</h3>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab neque consequuntur aperiam laborum voluptatum eos incidunt aliquam sint laboriosam! Voluptas, exercitationem dignissimos placeat accusamus iusto laudantium voluptate veritatis quisquam neque!</p>
+    <nav id="main-nav" class="fixed w-full bg-white/80 backdrop-blur-md shadow-sm z-50 transition-all duration-300">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full overflow-hidden border-2 border-blue-600 shadow-sm">
+                    <img src="assets/img/logo-ubsi.png" alt="Logo" class="w-full h-full object-cover">
+                </div>
+                <a href="#" class="text-2xl font-bold text-blue-600 tracking-tight">MyPortfolio</a>
             </div>
-          
+
+            <div class="hidden md:flex space-x-6 font-medium">
+                <a href="#home" class="nav-link hover:text-blue-600">Home</a>
+                <a href="#about" class="nav-link hover:text-blue-600">About</a>
+                <a href="#education" class="nav-link hover:text-blue-600">Education</a>
+                <a href="#certification" class="nav-link hover:text-blue-600">Certification</a>
+                <a href="#contact" class="nav-link hover:text-blue-600">Contact</a>
+            </div>
+            <a href="assets/pdf/Curriculum-Vitae.pdf" download class="bg-blue-600 text-white px-5 py-2 rounded-full hover:bg-blue-700 transition-all transform hover:scale-105 text-sm flex items-center">
+                Download CV <i class="fas fa-download ml-2"></i>
+            </a>
         </div>
+    </nav>
 
-          <div class="timeline-item">
-            <div class="timeline-dot"></div> 
-              <div class="timeline-date">2023</div>
-              <div class="timeline-content">
-                <h3>Intership</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab neque consequuntur aperiam laborum voluptatum eos incidunt aliquam sint laboriosam! Voluptas, exercitationem dignissimos placeat accusamus iusto laudantium voluptate veritatis quisquam neque!</p>
-              </div>
-          </div>
-
-            <div class="timeline-item">
-              <div class="timeline-dot"></div> 
-                <div class="timeline-date">2024</div>
-                <div class="timeline-content">
-                  <h3>Job</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab neque consequuntur aperiam laborum voluptatum eos incidunt aliquam sint laboriosam! Voluptas, exercitationem dignissimos placeat accusamus iusto laudantium voluptate veritatis quisquam neque!</p>
+    <section id="home" class="pt-40 pb-20 px-4 visible">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h2 class="text-blue-600 font-semibold tracking-wide uppercase mb-2">Hello, Welcome to my portfolio</h2>
+                <h1 class="text-5xl md:text-6xl font-bold mb-6">I'm <span class="text-blue-600">Muhammad Ali Ramadhani</span></h1>
+                <p class="text-gray-600 text-lg mb-8 leading-relaxed">
+                    I'm a junior web developer and designer based in Indonesia.
+                </p>
+            </div>
+            <div class="md:w-1/3">
+                <div class="relative">
+                    <div class="absolute -inset-4 bg-blue-100 rounded-full blur-2xl opacity-70"></div>
+                    <img src="assets/img/foto-diri.jpeg" alt="Foto Diri" class="relative rounded-2xl shadow-2xl border-4 border-white w-full object-cover aspect-[3/4]">
                 </div>
             </div>
-    </div>
-  </section>
-
-  <section class="project" id="project">
-    <h2 class="heading">Project</h2> 
-
-    <div class="services-container">
-      <div class="service-box">
-        <div class="service-info">
-          <h4>UI Design</h4>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non repudiandae doloribus iste doloremque. Hic laborum ab dolor nesciunt! Voluptatem accusamus dolorem eligendi! A, veritatis! Tempora illo ea at voluptas hic?</p>
         </div>
-      </div>
+    </section>
 
-      <div class="service-box">
-        <div class="service-info">
-          <h4>Frontend Dev</h4>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non repudiandae doloribus iste doloremque. Hic laborum ab dolor nesciunt! Voluptatem accusamus dolorem eligendi! A, veritatis! Tempora illo ea at voluptas hic?</p>
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-8 text-blue-600">About Me</h2>
+            <p class="text-gray-600 text-lg leading-relaxed mb-6">
+                I am a Diploma 3 (D3) graduate from Bina Sarana University's Informatics Tegal Campus, majoring in Information Systems. I have a strong desire to learn and am able to work well in a team. Skilled in Microsoft Office, Canva, Laravel, and Python.
+            </p>
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-4 mt-10">
+                <div class="p-4 bg-gray-50 rounded-xl font-bold text-blue-600 border border-blue-100 italic shadow-sm">HTML/CSS</div>
+                <div class="p-4 bg-gray-50 rounded-xl font-bold text-blue-600 border border-blue-100 italic shadow-sm">JavaScript</div>
+                <div class="p-4 bg-gray-50 rounded-xl font-bold text-blue-600 border border-blue-100 italic shadow-sm">Laravel</div>
+                <div class="p-4 bg-gray-50 rounded-xl font-bold text-blue-600 border border-blue-100 italic shadow-sm">Python</div>
+                <div class="p-4 bg-gray-50 rounded-xl font-bold text-blue-600 border border-blue-100 italic shadow-sm">Canva</div>
+            </div>
         </div>
-      </div>
+    </section>
 
-      <div class="service-box">
-        <div class="service-info">
-          <h4>System Analyst</h4>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non repudiandae doloribus iste doloremque. Hic laborum ab dolor nesciunt! Voluptatem accusamus dolorem eligendi! A, veritatis! Tempora illo ea at voluptas hic?</p>
+    <section id="education" class="py-20 px-4 bg-gray-50">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12 text-center text-blue-600">Education</h2>
+            <div class="space-y-8">
+                <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-100 flex flex-col md:flex-row items-center gap-6 hover:shadow-lg transition">
+                    <img src="assets/img/logo-smk.png" alt="Logo SMK" class="w-24 h-24 object-contain">
+                    <div class="text-center md:text-left">
+                        <h3 class="font-bold text-2xl">SMK Nurul Islam Larangan</h3>
+                        <p class="text-blue-600 font-semibold">Audio Video Techniques | Nilai: 85.83</p>
+                        <p class="text-gray-500 text-sm">2019 - 2022</p>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-100 flex flex-col md:flex-row items-center gap-6 hover:shadow-lg transition">
+                    <img src="assets/img/logo-ubsi.png" alt="Logo UBSI" class="w-24 h-24 object-contain">
+                    <div class="text-center md:text-left">
+                        <h3 class="font-bold text-2xl">Universitas Bina Sarana Informatika</h3>
+                        <p class="text-blue-600 font-semibold">Information Systems | IPK 3.52</p>
+                        <p class="text-gray-500 text-sm">2022 - 2025</p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+    </section>
 
-      <div class="service-box">
-        <div class="service-info">
-          <h4>Testing</h4>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non repudiandae doloribus iste doloremque. Hic laborum ab dolor nesciunt! Voluptatem accusamus dolorem eligendi! A, veritatis! Tempora illo ea at voluptas hic?</p>
+    <section id="certification" class="py-20 px-4 bg-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-12 text-blue-600">Certification</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <img src="assets/img/cert-python.jpg" class="rounded-xl shadow-lg border hover:scale-105 transition">
+                <img src="assets/img/cert-odoo.jpg" class="rounded-xl shadow-lg border hover:scale-105 transition">
+                <img src="assets/img/cert-kompetensi.jpg" class="rounded-xl shadow-lg border hover:scale-105 transition">
+                <img src="assets/img/cert-toefl.jpg" class="rounded-xl shadow-lg border hover:scale-105 transition">
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-   <section class="contact" id="contact">
-    <h2 class="heading">Contact <span>Me</span></h2>
-
-    <form action="">
-      <div class="input-group">
-        <div class="input-box">
-          <input type="text" placeholder="Name">
-          <input type="text" placeholder="Email">
+    <section id="contact" class="py-20 bg-blue-600 text-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-8">Let's Work Together!</h2>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="mailto:aliramadhani087@gmail.com" class="bg-white text-blue-600 px-6 py-3 rounded-lg font-bold hover:bg-gray-100 transition shadow-lg flex items-center gap-2">
+                    <i class="fas fa-envelope"></i> Email
+                </a>
+                <a href="https://wa.me/6281990004875" target="_blank" class="bg-[#25D366] text-white px-6 py-3 rounded-lg font-bold hover:brightness-110 transition shadow-lg flex items-center gap-2">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+                <a href="https://instagram.com/_aliramadhani" target="_blank" class="bg-gradient-to-tr from-[#f9ce34] via-[#ee2a7b] to-[#6228d7] text-white px-6 py-3 rounded-lg font-bold hover:brightness-110 transition shadow-lg flex items-center gap-2">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+            </div>
         </div>
-      </div>
+    </section>
 
-      <div class="input-group-2">
-        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-        <input type="submit" value="Send Message" class="btn">
-      </div>
-    </form>
-  </section>
+    <footer class="py-10 text-center text-gray-500 text-sm">
+        <p>&copy; 2026 | Muhammad Ali Ramadhani</p>
+    </footer>
 
-  <footer class="footer">
-    <div class="social">
-      <a href="https://wa.me/6289653600997"><i class='bx bxl-whatsapp' ></i></a>
-        <a href="https://www.linkedin.com/in/taufanhs/"><i class='bx bxl-linkedin'></i></a>
-        <a href="https://github.com/taufan759"><i class='bx bxl-github' ></i></a>
-        <a href="https://www.instagram.com/taufanakbr_/"><i class='bx bxl-instagram' ></i></a>
-    </div>
-
-    <ul class="list">
-      <li><a href="#home">About Me</a></li>
-      <li><a href="#achievements">Achievements</a></li>
-      <li><a href="#project">Project Me</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <p class="copyright">
-      Let's Connect | @taufan759@gmail.com
-    </p>
-  </footer>
-
-
-</body>
-</html>
-
-  <script src="script.js"></script>
-  <script src="https://unpkg.com/typeit@@{TYPEIT_VERSION}/dist/index.umd.js"></script>
-  <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    new TypeIt("#element", {
-      strings: ["This is my string!"],
-    }).go();
-  });
-</script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
